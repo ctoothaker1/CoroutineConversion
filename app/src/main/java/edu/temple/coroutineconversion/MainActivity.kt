@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             (0+it).toString().run {
                 withContext(Dispatchers.Main) {
                     cakeImageView.alpha = it / 100f
-                    currentTextView.text = "Current opacity " + it
+                    currentTextView.text = "Current opacity: " + it
                 }
                 Thread.sleep(40)
             }
